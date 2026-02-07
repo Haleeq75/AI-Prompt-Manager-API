@@ -39,6 +39,8 @@ Instead of just manual testing, I implemented an automated `APITestCase` suite. 
 
 Manual Testing is done by POSTMAN and Automated testing is done by Django Test
 
+---
+
 
 ## API Endpoints Summary
 
@@ -56,18 +58,23 @@ Manual Testing is done by POSTMAN and Automated testing is done by Django Test
 To ensure system stability, I implemented an automated test suite in `tests.py`.
 
 * **Total Tests:** Normal - 4, Edge - 6
-* **Coverage:**
 
 **Normal Case**
-1. User creation and password write-only verification.
-2. JWT token generation on valid credentials.
-3. Permission blocking for unauthorized requests.
-4. Token rotation and refresh logic.
-5. Duplicate username and email authentications
+| Test | Descriptions | 
+| --- | --- |
+| 1 | User creation and password write-only verification. |
+| 2 | JWT token generation on valid credentials. |
+| 3 | Permission blocking for unauthorized requests. |
+| 4 | Token rotation and refresh logic. |
+| 5 | Duplicate username and email authentications |
 
-**Normal Case**
-1. Token Based Authentications with tampered,malformed,missing.
-2. Token refreshing with invalid token
+
+**Edge Case**
+| Test | Descriptions |
+| --- | --- |
+| 1 | Token Based Authentications with tampered,malformed,missing. |
+| 2 | Token refreshing with invalid token. |
+
 
 ---
 
